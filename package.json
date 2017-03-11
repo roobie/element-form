@@ -1,0 +1,31 @@
+{
+  "name": "element_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "demo": "budo lib/demo.js --live",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "pretest": "npm run lint:fix",
+    "test": "tap spec/*.js",
+    "pretest:ci": "npm run lint",
+    "test:ci": "tap spec/*.js",
+    "test:cont": "nodemon -x \"npm test\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bel": "^4.5.1",
+    "csjs": "^1.1.0",
+    "nanocomponent": "^2.0.3",
+    "yo-yo": "^1.4.0"
+  },
+  "devDependencies": {
+    "bluebird": "^3.5.0",
+    "budo": "^9.4.7",
+    "nodemon": "^1.11.0",
+    "standard": "^9.0.1",
+    "tap": "^10.3.0"
+  }
+}
